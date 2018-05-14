@@ -1,0 +1,22 @@
+.footer{
+    width:100%;
+    height:235px;
+    background:url("../img/footer.jpg");
+    background-repeat:no-repeat;
+    background-size: cover;
+    background-position:center -80px;
+}
+.zhezhao{
+    width:100%;
+    height:235px;
+    background-color:rgba(0,0,0,0.6);
+    display: table;
+}
+.zhezhao p{
+    color:#ffffff;
+    font-size:12px;
+    text-align: center;
+    display:table-cell;
+    vertical-align:middle;
+    line-height: 2;
+}

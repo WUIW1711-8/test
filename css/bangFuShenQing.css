@@ -1,0 +1,156 @@
+.title{
+    width:1199px;
+    height:43px;
+    margin:0 auto;
+    background:#1180ca;
+    line-height:43px;
+    color:#ffffff;
+}
+.title-inner{
+    width:1125px;
+    height:43px;
+    margin:0 auto;
+    font-size:18px;
+    /*background: darkolivegreen;*/
+}
+.title-inner p{
+    width:1039px;
+    float: right;
+    /*color: red;*/
+    line-height: 30px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.shenqing{
+    width:1199px;
+    height:695px;
+    margin:0 auto;
+    border:1px solid #999999;
+    border-top:0;
+}
+.xuan{
+    width:1125px;
+    height: auto;
+    margin-left: 39px;
+    float: left;
+
+}
+.xuan_line{
+    width: 2px;
+    height: 18px;
+    background: #000;
+    margin-top: 27px;
+    float: left;
+}
+.caozuo{
+    font-size: 16px;
+    float: left;
+    font-weight: 600;
+    margin-left: 7px;
+    margin-top: 24px;
+}
+.xuan_line1{
+    width: 2px;
+    height: 18px;
+    background: #000;
+    margin-top: 27px;
+    margin-left: 7px;
+    float: left;
+}
+.xiala{
+    width: 192px;
+    height: 22px;
+    margin-left: 42px;
+    margin-top: 23px;
+    border: none;
+    border-bottom: 1px solid #c1c1c1;
+}
+.wenti{
+    width:992px;
+    height: 134px;
+    max-width: 992px;
+    min-width: 992px;
+    background: #f9f9f9;
+    margin-left: 42px;
+    border: none;
+    outline: none;
+    margin-top: 27px;
+}
+.zifu{
+    font-size: 13px;
+    color: #999999;
+    line-height: 13px;
+    margin-left: 130px;
+    margin-top: 10px;
+}
+.zifu1{
+    font-size: 13px;
+    color: #666666;
+    line-height: 13px;
+    margin-left: 130px;
+    margin-top: 10px;
+    font-weight:600;
+    float: left;
+}
+.zifu2{
+    float: left;
+    margin-left: 44px;
+}
+.youxiang{
+    display: block;
+    width: 321px;
+    height: 37px;
+    float: left;
+    margin-left: 42px;
+    border: none;
+    margin-top: 16px;
+    border-bottom: 1px solid #c1c1c1;
+    font-size: 16px;
+    color: #666666;
+    padding-left: 7px;
+
+}
+.box{
+    width: 100%;
+    height: 60px;
+}
+.youxiang1{
+    margin-left: 125px;
+}
+.tijiao{
+    width: 151px;
+    height: 43px;
+    background: red;
+    position: relative;
+    float: right;
+    margin-top: 45px;
+    margin-right: 35px;
+}
+.btn_line{
+    width: 3px;
+    height: 22px;
+    background: #333333;
+    position: absolute;
+    top: 10px;
+    left: -1px;
+}
+.btn_line2{
+    width: 3px;
+    height: 22px;
+    background: #333333;
+    position: absolute;
+    top: 10px;
+    right: -1px;
+}
+.btn{
+    width: 151px;
+    height: 43px;
+    background: #02adf0;
+    color: #fff;
+    font-size: 21px;
+    outline: none;
+    border: none;
+    float: right;
+
+}
