@@ -1,0 +1,471 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>精准扶贫，扶贫前线</title>
+
+    <link rel="stylesheet" href="css/public.css">
+    <link rel="stylesheet" href="css/fupinqianxian.css">
+
+    <link rel="stylesheet" href="css/animate.min.css">
+
+</head>
+<body>
+<!--头部开始-->
+<!--头部结束-->
+<!--banner开始-->
+<div id="banner">
+    <div class="carousel" @mouseenter="enter" @mouseleave="leave">
+        <transition-group
+                tag="ul"
+                name="image"
+                enter-active-class="animated lightSpeedIn"
+                leave-active-class="animated lightSpeedOut"
+        >
+            <li v-for='(image,index) in img' :key='index' v-show="index === mark">
+                <a href="javascript:;">
+                    <img :src="image">
+                </a>
+            </li>
+        </transition-group>
+
+        <div class="banner-left">
+            <div class="banner-left-con">
+                <div class="banner-left-con-img">
+                    <img src="images/b3.jpg" alt="">
+                </div>
+                <div class="banner-left-bot">
+                    <p>70年代中国极度贫困地区已不复存在</p>
+                </div>
+            </div>
+
+        </div>
+        <div class="banner-right">
+            <div class="Nnews">
+                <p>|  最新新闻  |</p>
+                <div class="Nnews-bot">
+                    <a href="">MORE</a>
+                    <span>></span>
+                </div>
+            </div>
+            <div class="Tnew">
+                <div class="tnew-con">
+                    <p class="new-title">山西贫困农民收入增速快于全国位次前移11位</p>
+                    <p class="new-con">7月17日上午，3万5千余斤土豆从忻州市代县聂营镇西段景村运抵我校，由校工会作为福利发放......</p>
+                </div>
+
+            </div>
+            <div class="img1">
+                <img src="images/b1.jpg" alt="">
+            </div>
+            <div class="new1">
+                <p>山西贫困农民收入增速快于全国位次前移11位</p>
+            </div>
+            <div class="img2">
+                <img src="images/b2.jpg" alt="">
+            </div>
+            <div class="new2">
+                <p>山西贫困农民收入增速快于全国位次前移11位</p>
+            </div>
+        </div>
+
+        <div class="bullet">
+        <span v-for="(item,index) in img.length" :class="{'active':index === mark}"
+              @click="change(index)" :key="index"></span>
+        </div>
+        <div class="switch">
+
+        </div>
+    </div>
+</div>
+<!--banner结束-->
+<div id="content">
+    <!--导航开始-->
+        <div class="con-nav">
+            <h1 class="con-nav-title">扶贫前线</h1>
+            <span class="con-nav-logo">||</span>
+            <p class="con-nav-nav">-------------------------------------------------------------------------------------------------------------------------------</p>
+        </div>
+    <!--导航结束-->
+    <!--商品展示开始-->
+        <div class="goods">
+            <ul>
+                <li class="goods-item">
+                    <span class="goods-item-logo">&#xe603;</span>
+                    <div class="goods-item-img">
+                        <img src="images/img/1.jpg" alt="">
+                    </div>
+                    <div class="goods-name">
+                        <h2 class="goods-cname">巴西肥牛</h2>
+                        <div class="elname">
+                            <h2 class="goods-Ename">BRAZILIAN</h2>
+                            <h2 class="goods-ename">GOLD BULL</h2>
+                        </div>
+                    </div>
+                    <div class="goods-prices">
+                        <h3 class="goods-price">59.00</h3>
+                        <h3 class="goods-price-dw">RMB</h3>
+                        <div class="goods-btn">
+                            <a class="goods-btn2">BUY</a>
+                        </div>
+                    </div>
+                </li>
+                <li class="goods-item">
+                    <span class="goods-item-logo">&#xe603;</span>
+                    <div class="goods-item-img">
+                        <img src="images/img/5.jpg" alt="">
+                    </div>
+                    <div class="goods-name">
+                        <h2 class="goods-cname">巴西肥牛</h2>
+                        <div class="elname">
+                            <h2 class="goods-Ename">BRAZILIAN</h2>
+                            <h2 class="goods-ename">GOLD BULL</h2>
+                        </div>
+                    </div>
+                    <div class="goods-prices">
+                        <h3 class="goods-price">59.00</h3>
+                        <h3 class="goods-price-dw">RMB</h3>
+                        <div class="goods-btn">
+                            <a class="goods-btn2">BUY</a>
+                        </div>
+                    </div>
+                </li>
+                <li class="goods-item">
+                    <span class="goods-item-logo">&#xe603;</span>
+                    <div class="goods-item-img">
+                        <img src="images/img/6.jpg" alt="">
+                    </div>
+                    <div class="goods-name">
+                        <h2 class="goods-cname">巴西肥牛</h2>
+                        <div class="elname">
+                            <h2 class="goods-Ename">BRAZILIAN</h2>
+                            <h2 class="goods-ename">GOLD BULL</h2>
+                        </div>
+                    </div>
+                    <div class="goods-prices">
+                        <h3 class="goods-price">59.00</h3>
+                        <h3 class="goods-price-dw">RMB</h3>
+                        <div class="goods-btn">
+                            <a class="goods-btn2">BUY</a>
+                        </div>
+                    </div>
+                </li>
+                <li class="goods-item">
+                    <span class="goods-item-logo">&#xe603;</span>
+                    <div class="goods-item-img">
+                        <img src="images/img/7.jpg" alt="">
+                    </div>
+                    <div class="goods-name">
+                        <h2 class="goods-cname">巴西肥牛</h2>
+                        <div class="elname">
+                            <h2 class="goods-Ename">BRAZILIAN</h2>
+                            <h2 class="goods-ename">GOLD BULL</h2>
+                        </div>
+                    </div>
+                    <div class="goods-prices">
+                        <h3 class="goods-price">59.00</h3>
+                        <h3 class="goods-price-dw">RMB</h3>
+                        <div class="goods-btn">
+                            <a class="goods-btn2">BUY</a>
+                        </div>
+                    </div>
+                </li>
+
+                <li class="goods-item">
+                    <span class="goods-item-logo">&#xe603;</span>
+                    <div class="goods-item-img">
+                        <img src="images/img/2.jpg" alt="">
+                    </div>
+                    <div class="goods-name">
+                        <h2 class="goods-cname">巴西肥牛</h2>
+                        <div class="elname">
+                            <h2 class="goods-Ename">BRAZILIAN</h2>
+                            <h2 class="goods-ename">GOLD BULL</h2>
+                        </div>
+                    </div>
+                    <div class="goods-prices">
+                        <h3 class="goods-price">59.00</h3>
+                        <h3 class="goods-price-dw">RMB</h3>
+                        <div class="goods-btn">
+                            <a class="goods-btn2">BUY</a>
+                        </div>
+                    </div>
+                </li>
+                <li class="goods-item">
+                    <span class="goods-item-logo">&#xe603;</span>
+                    <div class="goods-item-img">
+                        <img src="images/img/3.jpg" alt="">
+                    </div>
+                    <div class="goods-name">
+                        <h2 class="goods-cname">巴西肥牛</h2>
+                        <div class="elname">
+                            <h2 class="goods-Ename">BRAZILIAN</h2>
+                            <h2 class="goods-ename">GOLD BULL</h2>
+                        </div>
+                    </div>
+                    <div class="goods-prices">
+                        <h3 class="goods-price">59.00</h3>
+                        <h3 class="goods-price-dw">RMB</h3>
+                        <div class="goods-btn">
+                            <a class="goods-btn2">BUY</a>
+                        </div>
+                    </div>
+                </li>
+                <li class="goods-item">
+                    <span class="goods-item-logo">&#xe603;</span>
+                    <div class="goods-item-img">
+                        <img src="images/img/4.jpg" alt="">
+                    </div>
+                    <div class="goods-name">
+                        <h2 class="goods-cname">巴西肥牛</h2>
+                        <div class="elname">
+                            <h2 class="goods-Ename">BRAZILIAN</h2>
+                            <h2 class="goods-ename">GOLD BULL</h2>
+                        </div>
+                    </div>
+                    <div class="goods-prices">
+                        <h3 class="goods-price">59.00</h3>
+                        <h3 class="goods-price-dw">RMB</h3>
+                        <div class="goods-btn">
+                            <a class="goods-btn2">BUY</a>
+                        </div>
+                    </div>
+                </li>
+                <li class="goods-item">
+                    <span class="goods-item-logo">&#xe603;</span>
+                    <div class="goods-item-img">
+                        <img src="images/img/5.jpg" alt="">
+                    </div>
+                    <div class="goods-name">
+                        <h2 class="goods-cname">巴西肥牛</h2>
+                        <div class="elname">
+                            <h2 class="goods-Ename">BRAZILIAN</h2>
+                            <h2 class="goods-ename">GOLD BULL</h2>
+                        </div>
+                    </div>
+                    <div class="goods-prices">
+                        <h3 class="goods-price">59.00</h3>
+                        <h3 class="goods-price-dw">RMB</h3>
+                        <div class="goods-btn">
+                            <a class="goods-btn2">BUY</a>
+                        </div>
+                    </div>
+                </li>
+
+                <li class="goods-item">
+                    <span class="goods-item-logo">&#xe603;</span>
+                    <div class="goods-item-img">
+                        <img src="images/img/2.jpg" alt="">
+                    </div>
+                    <div class="goods-name">
+                        <h2 class="goods-cname">巴西肥牛</h2>
+                        <div class="elname">
+                            <h2 class="goods-Ename">BRAZILIAN</h2>
+                            <h2 class="goods-ename">GOLD BULL</h2>
+                        </div>
+                    </div>
+                    <div class="goods-prices">
+                        <h3 class="goods-price">59.00</h3>
+                        <h3 class="goods-price-dw">RMB</h3>
+                        <div class="goods-btn">
+                            <a class="goods-btn2">BUY</a>
+                        </div>
+                    </div>
+                </li>
+                <li class="goods-item">
+                    <span class="goods-item-logo">&#xe603;</span>
+                    <div class="goods-item-img">
+                        <img src="images/img/3.jpg" alt="">
+                    </div>
+                    <div class="goods-name">
+                        <h2 class="goods-cname">巴西肥牛</h2>
+                        <div class="elname">
+                            <h2 class="goods-Ename">BRAZILIAN</h2>
+                            <h2 class="goods-ename">GOLD BULL</h2>
+                        </div>
+                    </div>
+                    <div class="goods-prices">
+                        <h3 class="goods-price">59.00</h3>
+                        <h3 class="goods-price-dw">RMB</h3>
+                        <div class="goods-btn">
+                            <a class="goods-btn2">BUY</a>
+                        </div>
+                    </div>
+                </li>
+                <li class="goods-item">
+                    <span class="goods-item-logo">&#xe603;</span>
+                    <div class="goods-item-img">
+                        <img src="images/img/4.jpg" alt="">
+                    </div>
+                    <div class="goods-name">
+                        <h2 class="goods-cname">巴西肥牛</h2>
+                        <div class="elname">
+                            <h2 class="goods-Ename">BRAZILIAN</h2>
+                            <h2 class="goods-ename">GOLD BULL</h2>
+                        </div>
+                    </div>
+                    <div class="goods-prices">
+                        <h3 class="goods-price">59.00</h3>
+                        <h3 class="goods-price-dw">RMB</h3>
+                        <div class="goods-btn">
+                            <a class="goods-btn2">BUY</a>
+                        </div>
+                    </div>
+                </li>
+                <li class="goods-item">
+                    <span class="goods-item-logo">&#xe603;</span>
+                    <div class="goods-item-img">
+                        <img src="images/img/5.jpg" alt="">
+                    </div>
+                    <div class="goods-name">
+                        <h2 class="goods-cname">巴西肥牛</h2>
+                        <div class="elname">
+                            <h2 class="goods-Ename">BRAZILIAN</h2>
+                            <h2 class="goods-ename">GOLD BULL</h2>
+                        </div>
+                    </div>
+                    <div class="goods-prices">
+                        <h3 class="goods-price">59.00</h3>
+                        <h3 class="goods-price-dw">RMB</h3>
+                        <div class="goods-btn">
+                            <a class="goods-btn2">BUY</a>
+                        </div>
+                    </div>
+                </li>
+
+                <li class="goods-item">
+                    <span class="goods-item-logo">&#xe603;</span>
+                    <div class="goods-item-img">
+                        <img src="images/img/2.jpg" alt="">
+                    </div>
+                    <div class="goods-name">
+                        <h2 class="goods-cname">巴西肥牛</h2>
+                        <div class="elname">
+                            <h2 class="goods-Ename">BRAZILIAN</h2>
+                            <h2 class="goods-ename">GOLD BULL</h2>
+                        </div>
+                    </div>
+                    <div class="goods-prices">
+                        <h3 class="goods-price">59.00</h3>
+                        <h3 class="goods-price-dw">RMB</h3>
+                        <div class="goods-btn">
+                            <a class="goods-btn2">BUY</a>
+                        </div>
+                    </div>
+                </li>
+                <li class="goods-item">
+                    <span class="goods-item-logo">&#xe603;</span>
+                    <div class="goods-item-img">
+                        <img src="images/img/3.jpg" alt="">
+                    </div>
+                    <div class="goods-name">
+                        <h2 class="goods-cname">巴西肥牛</h2>
+                        <div class="elname">
+                            <h2 class="goods-Ename">BRAZILIAN</h2>
+                            <h2 class="goods-ename">GOLD BULL</h2>
+                        </div>
+                    </div>
+                    <div class="goods-prices">
+                        <h3 class="goods-price">59.00</h3>
+                        <h3 class="goods-price-dw">RMB</h3>
+                        <div class="goods-btn">
+                            <a class="goods-btn2">BUY</a>
+                        </div>
+                    </div>
+                </li>
+                <li class="goods-item">
+                    <span class="goods-item-logo">&#xe603;</span>
+                    <div class="goods-item-img">
+                        <img src="images/img/4.jpg" alt="">
+                    </div>
+                    <div class="goods-name">
+                        <h2 class="goods-cname">巴西肥牛</h2>
+                        <div class="elname">
+                            <h2 class="goods-Ename">BRAZILIAN</h2>
+                            <h2 class="goods-ename">GOLD BULL</h2>
+                        </div>
+                    </div>
+                    <div class="goods-prices">
+                        <h3 class="goods-price">59.00</h3>
+                        <h3 class="goods-price-dw">RMB</h3>
+                        <div class="goods-btn">
+                            <a class="goods-btn2">BUY</a>
+                        </div>
+                    </div>
+                </li>
+                <li class="goods-item">
+                    <span class="goods-item-logo">&#xe603;</span>
+                    <div class="goods-item-img">
+                        <img src="images/img/5.jpg" alt="">
+                    </div>
+                    <div class="goods-name">
+                        <h2 class="goods-cname">巴西肥牛</h2>
+                        <div class="elname">
+                            <h2 class="goods-Ename">BRAZILIAN</h2>
+                            <h2 class="goods-ename">GOLD BULL</h2>
+                        </div>
+                    </div>
+                    <div class="goods-prices">
+                        <h3 class="goods-price">59.00</h3>
+                        <h3 class="goods-price-dw">RMB</h3>
+                        <div class="goods-btn">
+                            <a class="goods-btn2">BUY</a>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    <!--商品展示结束-->
+    <!--分页开始-->
+        <div class="page">
+            <div class="FRIST">
+                <a href="">FRIST</a>
+            </div>
+            <div class="LAST">
+                <a href="">LAST</a>
+            </div>
+            <div class="PRVE">
+                <a href="">PRVE</a>
+            </div>
+            <div class="page-pags">
+                <span class="page1">
+                    <a href="">1</a>
+                </span>
+                <span>
+                    <a href="">2</a>
+                </span>
+                <span>
+                    <a href="">3</a>
+                </span>
+                <span>
+                    <a href="">4</a>
+                </span>
+                <span id="page5">
+                    <a href="">···</a>
+                </span>
+            </div>
+            <div class="NEXT">
+                <a href="">NEXT</a>
+            </div>
+            <div class="er">
+                <a href="">02</a>
+            </div>
+            <a class="go">
+                <span>GO</span>
+            </a>
+
+        </div>
+    <!--分页结束-->
+</div>
+<!--底部开始-->
+<!--底部结束-->
+
+<script src="js/jquery-3.3.1.min.js"></script>
+<script src="js/vue.min.js"></script>
+<script src="js/fupinqianxian.js"></script>
+
+</body>
+</html>
