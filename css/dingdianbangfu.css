@@ -1,0 +1,117 @@
+@font-face {
+  font-family: 'iconfont';  /* project id 664670 */
+  src: url('https://at.alicdn.com/t/font_664670_lnbsirbtg2oqolxr.eot');
+  src: url('https://at.alicdn.com/t/font_664670_lnbsirbtg2oqolxr.eot?#iefix') format('embedded-opentype'),
+  url('https://at.alicdn.com/t/font_664670_lnbsirbtg2oqolxr.woff') format('woff'),
+  url('https://at.alicdn.com/t/font_664670_lnbsirbtg2oqolxr.ttf') format('truetype'),
+  url('https://at.alicdn.com/t/font_664670_lnbsirbtg2oqolxr.svg#iconfont') format('svg');
+}
+*{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	text-decoration: none;
+}
+.assist{
+	width: 1201px;
+	height: auto;
+	box-sizing: border-box;
+	border: 1px solid #999999;
+	
+	
+	margin: 0 auto;
+}
+.assist_title{
+	
+	
+	width: 1201px;
+	height: 43px;
+	background: #1180ca;
+	color: #ffffff;
+	font-weight: bolder;
+	font-family: "微软雅黑";
+	line-height: 43px;
+}
+.assist_title p{
+	font-size: 18px;
+	margin-left: 38px;
+	margin-right: 16px;
+	float: left;
+}
+.assist_title img{
+	width:1045px;
+	height: 43px;
+	display: block;
+	float: left;
+}
+.assist_list{
+	width: 1126px;
+	height: 275px;
+	border-bottom: 1px solid #02adf0;
+	box-sizing: border-box;
+	margin: 0 auto;
+	padding: 24px  0 35px 0;
+}
+.assist_list ul li{
+	line-height: 27px;
+	font-family: "微软雅黑";
+	font-size: 14px;
+	width: 1126px;
+}
+.assist_list ul li em{
+	display: block;
+	width: 8px;
+	height: 8px;
+	border-radius: 50%;
+	background:#02adf0; 
+	margin: 9.5px 26px 0 0;
+	float: left;
+}
+.assist_list ul li a{
+	width: 746px;
+	display: block;
+	overflow: hidden; 
+	text-overflow: ellipsis; 
+	white-space: nowrap;
+	color: #666666;
+	font-weight: bold;
+	float: left;
+}
+.list1{
+	border: none;
+}
+.time{
+	width: 330px;
+	float: left;
+	
+}
+.assist_list ul li a:hover{
+	text-decoration: underline;
+	color: #1180ca;
+	cursor: pointer;
+
+}
+.times{
+	float: right;
+	font-size: 14px;
+	color: #666666;
+	line-height: 27px;
+}
+.times h1{
+	 font-family: 'iconfont'; 
+	 color: #67cef6;
+	 float: left;
+	 margin-right: 14px;
+	 display: block;
+	 font-size: 14px;
+}
+.times p{
+	 display: block;
+	  float: left;
+}
+.line{
+	width: 1069px;
+	height: 6px;
+	background: #1180ca;
+	margin: 0 auto 44px;
+}
